@@ -1,0 +1,326 @@
+
+
+/* Fonte e reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #111;
+  color: #fff;
+  
+}
+
+
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+.logo h1 {
+  margin: 0;
+  color: #fff;
+}
+
+.logo span {
+  color: #e50914;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #e50914;
+}
+
+/* Botão hambúrguer */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background: #000;
+    width: 200px;
+    border-radius: 5px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  nav ul li {
+    text-align: left;
+ 
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 30px;
+    padding-right: 40px;
+    
+  }
+
+  nav.active {
+    display: block;
+  }
+}
+
+
+/* Banner */
+.banner {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #b00610;
+  background-size: 600% 600%;
+  animation: gradientAnim 10s ease infinite;
+  color: #fff;
+}
+
+/* Destaques */
+.destaques {
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.destaques article {
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  transition: 0.3s;
+}
+
+.destaques article:hover {
+  transform: scale(1.05);
+  border: 2px solid #e50914;
+}
+
+.destaques img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Voltar ao topo */
+.voltar-topo {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  color: #e50914;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+
+  bottom: 0;
+  background: #000;
+  text-align: center;
+  position: static;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+footer a {
+  color: #e50914;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .redes a {
+  margin: 0 8px;
+  font-size: 20px;
+}
+
+/* Sobre */
+.sobre {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Tabela Equipe */
+.tabela-equipe {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.tabela-equipe h2{
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: left;
+  background: #222;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #e50914;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #444;
+}
+
+thead {
+  background: #e50914;
+  color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background: #333;
+}
+
+tfoot {
+  background: #111;
+  text-align: center;
+  font-style: italic;
+  color: #ccc;
+}
+
+/* Serviços */
+.servicos {
+
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #222;
+  padding: 5%;
+  border-radius: 12px;
+  width: 250px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border: 2px solid #e50914;
+}
+
+.card i {
+  font-size: 40px;
+  color: #e50914;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.card p {
+  font-size: 0.95em;
+  color: #ccc;
+}
+
+
+/* Contato */
+.contato {
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #222;
+  color: #fff;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  padding: 12px;
+  background: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #b00610;
+}
+
+
