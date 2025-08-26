@@ -1,16 +1,13 @@
-
-
 /* Fonte e reset */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #111;
+  background-color: #0B0F14; /* Azul bem escuro puxado para preto */
   color: #fff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  
 }
 
 main {
@@ -23,7 +20,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #000;
+  background: #1A1D23; /* Cinza azulado escuro */
   padding: 15px 30px;
   position: sticky;
   top: 0px;
@@ -36,7 +33,7 @@ header {
 }
 
 .logo span {
-  color: #e50914;
+  color: #4A90E2; /* Azul principal */
 }
 
 nav ul {
@@ -53,7 +50,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #e50914;
+  color: #4A90E2;
 }
 
 /* Botão hambúrguer */
@@ -71,7 +68,7 @@ nav a:hover {
     position: absolute;
     top: 65px;
     right: 0;
-    background: #000;
+    background: #1A1D23;
     width: 200px;
     border-radius: 5px;
   }
@@ -84,13 +81,11 @@ nav a:hover {
 
   nav ul li {
     text-align: left;
- 
   }
 
   .menu-toggle {
     display: block;
     font-size: 30px;
-    
   }
 
   nav.active {
@@ -107,7 +102,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #b00610;
+  background: linear-gradient(135deg, #1E3C72, #2A5298); /* Azul gradiente */
   background-size: 600% 600%;
   animation: gradientAnim 10s ease infinite;
   color: #fff;
@@ -123,7 +118,7 @@ nav a:hover {
 }
 
 .destaques article {
-  background: #222;
+  background: #1F242C; /* Cinza escuro */
   padding: 15px;
   border-radius: 10px;
   text-align: center;
@@ -133,7 +128,7 @@ nav a:hover {
 
 .destaques article:hover {
   transform: scale(1.05);
-  border: 2px solid #e50914;
+  border: 2px solid #4A90E2; /* Azul destaque */
 }
 
 .destaques img {
@@ -146,26 +141,23 @@ nav a:hover {
   display: block;
   text-align: center;
   margin: 20px 0;
-  color: #e50914;
+  color: #4A90E2;
   text-decoration: none;
   font-weight: bold;
 }
 
 /* Footer */
 footer {
-
-  
-  background: #000;
+  background: #1A1D23;
   text-align: center;
   position: static;
   padding: 20px;
-  
   margin-top: 30px;
   margin-bottom: 0px;
 }
 
 footer a {
-  color: #e50914;
+  color: #4A90E2;
   margin: 0 10px;
   text-decoration: none;
 }
@@ -185,10 +177,7 @@ footer .redes a {
 
 /* Tabela Equipe */
 .tabela-equipe {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding: 40px 10px;
   max-width: 900px;
   margin: auto;
 }
@@ -196,7 +185,6 @@ footer .redes a {
 .tabela-equipe h2{
   text-align: center;
   margin-bottom: 20px;
-
 }
 
 table {
@@ -204,7 +192,7 @@ table {
   border-collapse: collapse;
   margin-top: 20px;
   text-align: left;
-  background: #222;
+  background: #1F242C;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -214,21 +202,21 @@ caption {
   font-weight: bold;
   font-size: 1.2em;
   margin-bottom: 10px;
-  color: #e50914;
+  color: #4A90E2;
 }
 
 th, td {
   padding: 12px;
-  border: 1px solid #444;
+  border: 1px solid #333;
 }
 
 thead {
-  background: #e50914;
+  background: #4A90E2;
   color: #fff;
 }
 
 tbody tr:nth-child(even) {
-  background: #333;
+  background: #2C3038;
 }
 
 tfoot {
@@ -253,7 +241,7 @@ tfoot {
 }
 
 .card {
-  background: #222;
+  background: #1F242C;
   padding: 5%;
   border-radius: 12px;
   width: 250px;
@@ -263,12 +251,12 @@ tfoot {
 
 .card:hover {
   transform: translateY(-5px);
-  border: 2px solid #e50914;
+  border: 2px solid #4A90E2;
 }
 
 .card i {
   font-size: 40px;
-  color: #e50914;
+  color: #4A90E2;
   margin-bottom: 15px;
 }
 
@@ -305,9 +293,9 @@ label {
 
 input, textarea {
   padding: 12px;
-  border: 1px solid #444;
+  border: 1px solid #333;
   border-radius: 6px;
-  background: #222;
+  background: #1F242C;
   color: #fff;
 }
 
@@ -318,7 +306,7 @@ textarea {
 
 button {
   padding: 12px;
-  background: #e50914;
+  background: #4A90E2;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -329,7 +317,5 @@ button {
 }
 
 button:hover {
-  background: #b00610;
+  background: #3568A0; /* Azul mais escuro no hover */
 }
-
-
